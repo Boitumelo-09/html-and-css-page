@@ -3,7 +3,7 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
-    text-transform: capitalize;
+    
    font-family: 'Poppins' , sans-serif; 
 }
 img{
@@ -25,7 +25,7 @@ body{
      background: radial-gradient(hsla(0, 0%, 50%, 0.788), #111 );
     font-size: 1.6rem;
     height: auto;
-    padding: 1.5rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     z-index:1;
@@ -42,7 +42,7 @@ header nav ul{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
-    gap: 6rem;
+    gap: 1.5rem;
 }
 header nav ul li, a{
     text-decoration: none;
@@ -51,7 +51,7 @@ header nav ul li, a{
     font-weight: 500;
 }
 header nav ul li a:hover{
-   font-size: 1.7rem;
+   font-size: 1.5rem;
    font-weight: 400;
    color:hsla(0, 0%, 96%, 0.637);
    text-shadow: 0px 0px 6px rgb(12, 4, 4);
@@ -73,7 +73,7 @@ header nav ul li a:hover{
     padding: 4px;
     border:none;
     -webkit-backdrop-filter: blur(10px); 
-    backdrop-filter:blur(3px);
+    backdrop-filter:blur(3.1px);
    }
   h1{
     flex-grow: 5px;
@@ -112,12 +112,12 @@ header nav ul li a:hover{
     padding: 2%;
     height: auto;
     background-color: rgb(179, 179, 126);
-    min-width:70%;
+    min-width:80%;
     column-count:3;
     column-width: 25%;
-    column-rule: 1px solid black;
-    column-gap: 2%;
-    break-inside: avoid-column;
+    column-rule: 0px solid black;
+    column-gap: 4%;
+    
     column-span: all;
     
    }
@@ -134,7 +134,7 @@ header nav ul li a:hover{
    }
    .pbase{
     color: darkslategrey;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-style: italic;
     
    }
@@ -144,9 +144,84 @@ header nav ul li a:hover{
    }
    .contacts{
     color: #111;
+    white-space: wrap;
+
    }
    .fa-square-envelope, .fa-phone, .fa-location-dot , .fa-instagram, .fa-facebook, .fa-x-twitter , .fa-whatsapp{
     color:#111;
    }
+  .reachus ul li {
+    list-style: none;
+  }
   
-   
+
+  @media only screen and (max-width:500px) {
+    header nav {
+      font-size: 1.2rem;
+      padding:15px;
+      
+    }
+   li:nth-child(odd){
+    display: none;
+   }
+  }
+  .copy{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: aliceblue;
+    text-align: center;
+    padding:20px;
+  }
+  .fa-calendar-days, .fa-clock{
+    color:#111;
+    font-size: 80px;
+    margin-inline: 30px;
+  }
+  .fa-clock{
+    margin-top: 30px;
+  }
+  a button{
+    border-radius: 15px;
+    font-size: 1.5rem;
+    border:1px black solid;
+    background-color: #111;
+    color:antiquewhite;
+    height:40px;
+    width:120px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  a button:hover{
+    font-size: 1.7rem;
+    width:125px;
+    height:45px;
+  }
+  address .contacts a{
+    color:#111;
+  }
+  .reachus ul li a{
+    text-shadow: #111 0px 0px 15px;
+    padding:5px;
+    border-radius: 5px;
+  }
+  .reachus ul li a:hover{
+    text-shadow: #111 0px 0px 15px;
+    text-decoration: underline;
+    background-color: #111;
+  }
+  .lorem{
+    color: #111;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: small;
+    text-shadow: none;
+  }
+  .fa-circle-info{
+    color: #111;
+    font-size: 2rem;
+  }
+  #uptodate{
+    font-weight: 300;
+    text-decoration: wavy;
+    font-style: oblique;
+  }
